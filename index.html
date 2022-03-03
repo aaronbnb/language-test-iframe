@@ -5,15 +5,57 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    
+    <style>
+        .vis-hidden {
+        visibility: hidden;
+        }
+          .display-none {
+        display: none;
+        }
+        
+    </style>
 </head>
   <body>
+      
+      
  Here's a test page, is it pronounced correctly???
-  
-    <h2>Spanish iframe with a lang attribute</h2>
+  <div>
+    <h2>iframe with a lang="es" attribute</h2>
   <iframe src="https://laopinion.com/2021/08/13/86-de-encuestados-culpa-a-la-pandemia-y-79-al-gobierno-de-biden-de-la-inflacion-que-esta-afectando-los-bolsillos-en-ee-uu/" lang="es">
     </iframe>
-  <iframe src="https://tucm-live.sd.demo.truelink.com/tucm/dashboard.page&output=embed" height="500" width="500"></iframe>
+      </div>
+      <div>
+      <h2>iframe with a blank lang attribute</h2>
   <iframe src="https://aaronbnb.github.io/hot-restaurant/" height="500" width="500"></iframe>
+      </div>
+      
+      <h2>Label/input tests</h2>
+      
+            <h3>Label visibility hidden, input visibility hidden</h3>
+   <input type="text" id="label-vis-hidden1" class="vis-hidden">
+   <label for="label-vis-hidden1" class="vis-hidden">Name</label>
+      <br>
+               <h3>Label visibility hidden, input exposed </h3>
+   <input type="text" id="label-vis-hidden2" class="vis-hidden">
+   <label for="label-vis-hidden2">Name</label>
+      <br>   
+     
+                  <h3>Label display none, input display none</h3>
+   <input type="text" id="label-vis-hidden3" class="display-none">
+  <label for="label-vis-hidden3" class="display-none">Name</label>
+      <br>
+      
+              <h3>Label display none, input exposed</h3>
+   <input type="text" id="label-vis-hidden4" class="display-none">
+  <label for="label-vis-hidden4">Name</label>
+      <br>
+      
+   <details id="det" arc="1">
+    <summary id="sum" arc="2">Details</summary>
+    Something small enough to escape casual notice.
+</details>
+      
     
   </body>
 </html>
