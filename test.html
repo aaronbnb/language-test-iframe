@@ -5,12 +5,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SVG tests</title>
+    <style>
+        #button {
+         height: 300px !important;
+         width: 300px;
+         background-color: #0077c8;
+        }
+        
+        #icon {
+            background-image: url("https://2.bp.blogspot.com/-akaW_RlCjTA/TjqNgp54JiI/AAAAAAAAB1o/8pZAz5XmGzA/s1600/go%252520signlarge.gif");
+        }
+        
+         #link {
+         height: 300px !important;
+         width: 300px;
+         background-color: #0077c8;
+        }
+    </style>
 </head>
 <body>
     <h2>This is an empty button</h2>
-    <button></button>
+    <button id="button"><span id="icon"></span></button>
     <h2>This is an empty link</h2>
-    <a href="https://www.https://vanderhallusa.com/" style="width:300px;height:300px;background-color:#0077c8"></a>    
+    <a href="https://www.https://vanderhallusa.com/" id="link"></a>    
     
     <div role="menu">
         <li role="menuitem">Test (menuitem 1 of 3) 2 and 3 do not contain any text</li>
