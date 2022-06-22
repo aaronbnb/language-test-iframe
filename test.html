@@ -19,9 +19,37 @@
          width: 300px;
          background-color: #0077c8;
         }
+        
+.sr-only {
+  clip: rect(0 0 0 0); 
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap; 
+  width: 1px;
+    color: white;
+}
+    
+        .small {
+            font-size: 2px;
+            color: white;
+        }
+        
+        .light-bg {
+            background-color: #fafafa;
+        }
+        
     </style>
 </head>
 <body>
+    <div class="light-bg">
+        <span class="sr-only">This is visually hidden text</span>
+        <span class="small">This is very small text</span>
+    </div>
+    
+    
+    
       <h2>This is a svg-based link. link has aria-label. svg has aria-hidden</h2>
   <a href="/test" aria-label="example">
     <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" 1svg="1svg" width="32px" height="32px" viewBox="0 0 32 32">
