@@ -30,12 +30,14 @@
     </style>
 </head>
   <body>
- <h2>Relative link text</h2>
+ <h2>Testing <strong>Accessible text does not contain visible text</strong>rule</h2>
       <div>
-<a href="/test.html">Test</a>
-<a href="/test2.html">Test2</a>
-<a href="/test3">Test3</a>
+<a href="/test.html" aria-label="Exact same">Exact same</a>
+<a href="/test.html" aria-label=" Exact same">Exact same</a>
+<a href="/test.html" aria-label="Test this"><span>Test</span></a>
+<a href="/test.html" aria-label="This is a test this">Test</a>
       </div>
+
 
 
       
@@ -82,72 +84,7 @@
                          <div><span class="sr-only">go to </span><span> Step 1<span></div>
           <div><span class="sr-only">learn more</span> about dinosaurs</div>
                              <div><span class="sr-only">categories </span><span> games, entertainment</span></div>
-      
-      
-      <h2>Label/input tests</h2>
-                                      <h3>Label aria-hidden, input</h3>
-   <input type="text" id="input-aria-hidden1">
-   <label for="input-aria-hidden1"  aria-hidden="true">Username</label>
-      <br>
-      
-            <h3>Label visibility hidden, input visibility hidden</h3>
-   <input type="text" id="label-vis-hidden1" class="vis-hidden">
-   <label for="label-vis-hidden1" class="vis-hidden">Name</label>
-      <br>
-               <h3>Label visibility hidden, input exposed </h3>
-   <input type="text" id="label-vis-hidden2" >
-   <label for="label-vis-hidden2" class="vis-hidden">Name</label>
-      <br>   
-     
-                  <h3>Label display none, input display none</h3>
-   <input type="text" id="label-dis-none1" class="display-none">
-  <label for="label-dis-none1" class="display-none">Name</label>
-      <br>
-      
-              <h3>Label display none, input exposed</h3>
-   <input type="text" id="label-dis-none2" >
-  <label for="label-dis-none2" class="display-none">Name</label>
-      <br>
-                             
-                             <h2>Radio buttons</h2>      
-                             <h3>Properly formatted radio buttons with programmatically associated label and input adjacent to one another</h3>
-     <fieldset>
-                             <legend>Please select your favorite Web language:</legend>
-  <input type="radio" id="html" name="fav_language" value="HTML">
-  <label for="html">HTML</label><br>
-  <input type="radio" id="css" name="fav_language" value="CSS">
-  <label for="css">CSS</label><br>
-  <input type="radio" id="javascript" name="fav_language" value="JavaScript">
-  <label for="javascript">JavaScript</label>
-                             </fieldset>
-   <h3>Radio buttons with label wrapping input, no for/id association</h3>
-     <fieldset>
-                             <legend>Please select your favorite Web language:</legend>
-
-  <label>HTML
-      <input type="radio" id="html" name="fav_language1" value="HTML">     
-         </label><br>
-     <label>      
-  <input type="radio" id="css1" name="fav_language1" value="CSS">
-CSS</label><br>
-  <label>
-      <input type="radio" id="javascript1" name="fav_language1" value="JavaScript">
-  JavaScript</label>
-   </fieldset>
-      <h3>Radio buttons with label wrapping input, and an incorrect for/id association</h3>                         
-                 <fieldset>            
-                                 <legend>Please select your favorite Web language:</legend>
-
-  <label for="html41">HTML
-      <input type="radio" id="html2" name="fav_language12" value="HTML">     
-         </label><br>
-     <label  for="htmldf1">      
-  <input type="radio" id="css2" name="fav_language12" value="CSS">
-CSS</label><br>
-  <label for="htmldfs1">
-      <input type="radio" id="javascript2" name="fav_language12" value="JavaScript">
-  JavaScript</label>
-   </fieldset>                         
+                 
                              
  Here's a test page, is it pronounced correctly???
   <div>
