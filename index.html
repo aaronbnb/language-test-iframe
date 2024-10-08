@@ -26,7 +26,15 @@
         #none {
         list-style: none;
         }
-        
+
+        .touch-target-fail-container {
+        display: flex;
+        }
+        .touch-target-fail {
+        margin: 1px;
+        height: 10px;
+        width: 10px;
+        }
     </style>
 </head>
   <body>
@@ -39,7 +47,12 @@
 <a href="http://www.calstrs.com" target="_blank" class="navLinks" aria-label="CalSTRS.com - opens in new window">CalSTRS.com <span class="glyphicon glyphicon-new-window glyphicon-resize-small" aria-hidden="true"></span></a>
       </div>
 
-
+<div class="touch-target-fail-container">
+     <h2>Testing Touch Target/Spacing rule</h2>
+    <button class="touch-target-fail">1</button>
+    <button class="touch-target-fail">2</button>
+    <button class="touch-target-fail">3</button>
+</div>
 
       
 <h2>List using list style none</h2>
